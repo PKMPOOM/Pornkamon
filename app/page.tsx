@@ -4,7 +4,7 @@ import Details from "@/components/Details";
 export default function Home() {
   return (
     <div className=" flex gap-6 justify-center ">
-      <div className="flex gap-10 justify-center w-full max-w-7xl px-6 pt-20 outline outline-1 outline-red-300">
+      <div className="flex gap-10 justify-center w-full max-w-7xl px-6 pt-20 ">
         {/* left navbar */}
         <Details />
         {/* detail experiences */}
