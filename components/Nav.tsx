@@ -21,7 +21,7 @@ function Nav() {
     },
     {
       id: 3,
-      title: "WorkingProject",
+      title: "Working Project",
       link: "WorkingProject",
       href: "#WorkingProject",
     },

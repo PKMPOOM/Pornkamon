@@ -1,7 +1,7 @@
 import React from "react";
 import "./Content.css";
 import InviewTrigger from "../InviewTrigger";
-
+import Chips from "../ui/Chips";
 interface Experience {
   title: string;
   company: string;
@@ -101,12 +101,12 @@ function PreviousExperiences() {
             </div>
 
             <ul className=" mt-4">
-              {items.responsibilities.map((items, index) => (
+              {items.responsibilities.map((skill, index) => (
                 <li
                   key={index}
                   className=" text-slate-500 mb-1 transition-all duration-300 group-hover:text-slate-800 text-sm"
                 >
-                  - {items}
+                  - {skill}
                 </li>
               ))}
             </ul>
