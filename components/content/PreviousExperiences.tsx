@@ -78,25 +78,29 @@ const ExperiencedData: Experience[] = [
 
 function PreviousExperiences() {
   return (
-    <div className="relative">
+    <div className="relative mb-10">
       <a className="anchor" id="Experiences" />
       <InviewTrigger id={"#Experiences"} />
+      <p className=" text-3xl font-semibold mb-8 text-slate-800 lg:hidden">
+        Experiences
+      </p>
       {ExperiencedData.map((items, index) => (
         <div
           key={items.title}
-          className="group  flex lg:flex-row flex-col gap-4 mb-10 border border-hidden hover:bg-white/80 hover:border-slate-200 hover:shadow-md  p-4 rounded-lg transition-all duration-300"
+          className="group flex lg:flex-row flex-col gap-2 lg:gap-4 mb-10 border border-hidden lg:hover:bg-white/80 lg:hover:border-slate-200 lg:hover:shadow-md  lg:p-4 rounded-lg transition-all duration-300"
         >
-          <div className=" lg:w-3/12  font-normal text-sm text-slate-500 transition-all duration-300 group-hover:text-slate-800">
-            {items.timeRanges}
+          <div className=" flex lg:w-3/12 font-normal lg:items-start items-center gap-4 text-sm text-slate-500 transition-all duration-300 lg:group-hover:text-slate-800">
+            <p className=" ">{items.timeRanges}</p>
+            <div className=" w-7 h-[1px] bg-slate-300 flex-1 lg:hidden"></div>
           </div>
           <div className=" lg:w-9/12 ">
-            <div className=" flex items-start lg:items-center lg:flex-row flex-col text-slate-500 transition-all duration-300 text-xl group-hover:text-slate-800 font-semibold">
+            <div className=" flex items-start lg:items-center lg:flex-row flex-col text-slate-500 transition-all duration-300 text-xl lg:group-hover:text-slate-800 font-semibold">
               {items.title}
               <span className="text-sm lg:pl-2 font-normal">
                 {items.company} - {items.jobType}
               </span>
             </div>
-            <div className=" text-slate-500 mt-4 transition-all duration-300 group-hover:text-slate-800 text-sm">
+            <div className=" text-slate-500 mt-4 transition-all duration-300 lg:group-hover:text-slate-800 text-sm">
               {items.summary}
             </div>
 
@@ -104,7 +108,7 @@ function PreviousExperiences() {
               {items.responsibilities.map((skill, index) => (
                 <li
                   key={index}
-                  className=" text-slate-500 mb-1 transition-all duration-300 group-hover:text-slate-800 text-sm"
+                  className=" text-xs text-slate-500 mb-1 transition-all duration-300 lg:group-hover:text-slate-800 lg:text-sm"
                 >
                   - {skill}
                 </li>

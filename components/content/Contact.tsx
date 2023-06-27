@@ -15,41 +15,56 @@ function Contact() {
       <InviewTrigger id={"#Contact"} />
       <div>
         <p className=" text-3xl font-semibold text-slate-800">
-          Interested in working together?
+          Interested to working together?
         </p>
         <p>Feels free to message me in any channel</p>
       </div>
-      <div className=" flex flex-col mt-5 gap-4">
-        <div className=" hover:text-blue-500 text-slate-500 cursor-pointer transition-all duration-200">
+      <div className=" flex lg:flex-col mt-5 gap-4">
+        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-500 cursor-pointer transition-all duration-200">
           <a
-            className=" flex gap-3 items-center"
+            className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
             href="https://www.linkedin.com/in/pornkamon-kotemul-6b101a85/"
             target="_blank"
           >
-            <AiFillLinkedin size={25} />
-            https://www.linkedin.com/in/pornkamon-kotemul-6b101a85/
+            <div>
+              <AiFillLinkedin size={25} />
+            </div>
+            <p className=" hidden lg:block">
+              https://www.linkedin.com/in/pornkamon-kotemul-6b101a85/
+            </p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-500 cursor-pointer transition-all duration-200">
+        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-500 cursor-pointer transition-all duration-200">
           <a
-            className=" flex gap-3 items-center"
+            className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
             href="mailto:poom.pornkamon@gmail.com"
           >
-            <AiOutlineGoogle size={25} /> poom.pornkamon@gmail.com
+            <div>
+              <AiOutlineGoogle size={25} />
+            </div>
+            <p className=" hidden lg:block">poom.pornkamon@gmail.com</p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-500 cursor-pointer transition-all duration-200">
+        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-500 cursor-pointer transition-all duration-200">
           <a
-            className=" flex gap-3 items-center"
-            href="https://github.com/PKMPOOM"
-            target="_blank"
+            className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
+            href="mailto:poom.pornkamon@gmail.com"
           >
-            <AiOutlineGithub size={25} /> https://github.com/PKMPOOM
+            <div>
+              <AiOutlineGithub size={25} />
+            </div>
+            <p className=" hidden lg:block">https://github.com/PKMPOOM</p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-500 cursor-pointer transition-all duration-200">
-          <a className=" flex gap-3 items-center" href="tel:+66613740745">
-            <AiFillPhone size={25} /> +66613740745
+        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-500 cursor-pointer transition-all duration-200">
+          <a
+            className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
+            href="mailto:poom.pornkamon@gmail.com"
+          >
+            <div>
+              <AiFillPhone size={25} />
+            </div>
+            <p className=" hidden lg:block"> +66613740745</p>
           </a>
         </div>
       </div>
