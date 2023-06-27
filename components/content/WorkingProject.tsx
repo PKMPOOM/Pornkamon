@@ -58,17 +58,21 @@ function WorkingProject() {
           siteLink,
         }) => (
           <div key={projectName} className=" flex flex-col gap-1 ">
-            <div className=" flex gap-3 items-center">
+            <p className=" text-3xl font-semibold mb-8 text-slate-800 lg:hidden">
+              Project
+            </p>
+            <div className=" flex lg:flex-row flex-col items-start gap-3 lg:items-center">
               <a href={siteLink} target="_blank">
                 <p className=" text-xl font-semibold text-slate-500 hover:text-blue-500 transition-all duration-150 no-underline hover:underline underline-offset-4 decoration-2">
                   {projectName} &#8599;
                 </p>
               </a>
-
-              <p className=" text-sm text-slate-500">{type}</p>
-              <p className=" text-sm text-slate-500">{timeRanges}</p>
-              <div className=" text-xs text-orange-400 px-2 border border-orange-400 py-1 rounded-md bg-orange-50 cursor-pointer hover:bg-orange-100 transition-all duration-150 inline-block">
-                {status}
+              <div className=" flex gap-3 items-center mb-4 lg:mb-0">
+                <p className=" text-sm text-slate-500">{type}</p>
+                <p className=" text-sm text-slate-500">{timeRanges}</p>
+                <div className=" text-xs text-orange-400 px-2 border border-orange-400 py-1 rounded-md bg-orange-50 cursor-pointer hover:bg-orange-100 transition-all duration-150 inline-block">
+                  {status}
+                </div>
               </div>
             </div>
             <p className=" text-sm font-semibold text-slate-500">
