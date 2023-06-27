@@ -42,7 +42,7 @@ const Project = [
 
 function WorkingProject() {
   return (
-    <div className=" min-h-screen p-4 relative">
+    <div className=" lg:min-h-screen lg:p-4 pb-10 relative">
       <a className="anchor" id="WorkingProject" />
       <InviewTrigger id={"#WorkingProject"} />
       {Project.map(
@@ -57,7 +57,7 @@ function WorkingProject() {
           projectSummary,
           siteLink,
         }) => (
-          <div key={projectName} className=" flex flex-col gap-1">
+          <div key={projectName} className=" flex flex-col gap-1 ">
             <div className=" flex gap-3 items-center">
               <a href={siteLink} target="_blank">
                 <p className=" text-xl font-semibold text-slate-500 hover:text-blue-500 transition-all duration-150 no-underline hover:underline underline-offset-4 decoration-2">
