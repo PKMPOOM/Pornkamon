@@ -84,15 +84,15 @@ function PreviousExperiences() {
       {ExperiencedData.map((items, index) => (
         <div
           key={items.title}
-          className="group flex gap-4 mb-10 border border-white hover:border-slate-200 hover:shadow-md  p-4 rounded-lg transition-all duration-300"
+          className="group  flex lg:flex-row flex-col gap-4 mb-10 border border-hidden hover:bg-white/80 hover:border-slate-200 hover:shadow-md  p-4 rounded-lg transition-all duration-300"
         >
-          <div className=" w-3/12 font-normal text-sm text-slate-500 transition-all duration-300 group-hover:text-slate-800">
+          <div className=" lg:w-3/12  font-normal text-sm text-slate-500 transition-all duration-300 group-hover:text-slate-800">
             {items.timeRanges}
           </div>
-          <div className=" w-9/12">
-            <div className=" text-slate-500 transition-all duration-300 text-xl group-hover:text-slate-800 font-semibold">
+          <div className=" lg:w-9/12 ">
+            <div className=" flex items-start lg:items-center lg:flex-row flex-col text-slate-500 transition-all duration-300 text-xl group-hover:text-slate-800 font-semibold">
               {items.title}
-              <span className="text-sm pl-2 font-normal">
+              <span className="text-sm lg:pl-2 font-normal">
                 {items.company} - {items.jobType}
               </span>
             </div>

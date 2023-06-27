@@ -39,7 +39,7 @@ function Nav() {
   ]);
 
   return (
-    <ul className="mt-6 w-52">
+    <ul className="mt-6 w-52 hidden lg:block">
       {initData.map((items, index) => {
         const active = items.href === ActiveAnchor;
         return (

@@ -3,7 +3,9 @@ import Nav from "./Nav";
 function Details() {
   // const [Active, setActive] = useState<boolean>(false);
   return (
-    <div className=" self-start sticky top-20 w-2/5 ">
+    <div className=" self-start lg:sticky top-20 w-full lg:w-2/5 ">
+      <div className="magicpattern lg:absolute fixed " />
+
       <div className=" text-4xl font-normal tracking-tight text-slate-800 sm:text-5xl ">
         PORNKAMON
       </div>

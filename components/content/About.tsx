@@ -1,6 +1,7 @@
 import React from "react";
 import "./Content.css";
 import InviewTrigger from "../InviewTrigger";
+import Chips from "../ui/Chips";
 
 type SkillData = {
   category: string;
@@ -38,7 +39,7 @@ const skillsData: SkillData[] = [
 
 function About() {
   return (
-    <div className="relative text-slate-500 mb-20">
+    <div className="relative text-slate-500  mb-20">
       <a className="anchor" id="About" />
       <InviewTrigger id={"#About"} />
       <p className=" mb-4">
@@ -53,7 +54,7 @@ function About() {
         <br />
         With knowledge in front-end development and CSS,
         <span className=" font-bold text-slate-800">
-          {` I create user-friendly designs`}
+          {` I create user-friendly designs `}
         </span>
         while transitioning from Angular to React. Additionally, I have built
         design systems for improved consistency. As a self-employed designer, I
@@ -65,15 +66,10 @@ function About() {
       <div className="flex flex-col gap-4">
         {skillsData.map((items) => (
           <div key={items.category}>
-            <div className=" font-semibold w-32">{items.category}</div>
-            <div className=" flex flex-wrap gap-2 my-1 pl-2">
-              {items.skills.map((items) => (
-                <div
-                  key={items}
-                  className=" bg-slate-50 px-4 py-2 rounded-full text-xs hover:bg-sky-100 transition-all duration-300 cursor-pointer "
-                >
-                  {items}
-                </div>
+            <div className=" text-sm font-semibold w-32">{items.category}</div>
+            <div className=" flex flex-wrap gap-2 my-1 ">
+              {items.skills.map((items, index) => (
+                <Chips key={index} label={items} />
               ))}
             </div>
           </div>
