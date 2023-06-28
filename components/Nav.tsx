@@ -43,24 +43,23 @@ function Nav() {
       {initData.map((items, index) => {
         const active = items.href === ActiveAnchor;
         return (
-          <li
+          <a
             key={index}
-            className="group flex items-center gap-2 cursor-pointer py-1"
+            href={items.href}
+            onClick={() => {
+              setActiveAnchor(items.href);
+            }}
           >
-            <span
-              className={`w-[30px] h-[1px] 
+            <li className="group flex items-center gap-2 cursor-pointer py-1">
+              <span
+                className={`w-[30px] h-[1px] 
                 group-hover:w-[50px] group-hover:bg-slate-800  
                 ${active ? "w-[50px]" : "w-[30px]"}
                 ${
                   active ? " bg-slate-800" : " bg-slate-500"
                 } left-10  bottom-1.5 transition-all duration-100`}
-            />
-            <a
-              href={items.href}
-              onClick={() => {
-                setActiveAnchor(items.href);
-              }}
-            >
+              />
+
               <p
                 className={`transition-all duration-100 font-semibold  
                     ${active ? "text-slate-800" : "text-slate-500"}
@@ -68,8 +67,8 @@ function Nav() {
               >
                 {items.title}
               </p>
-            </a>
-          </li>
+            </li>
+          </a>
         );
       })}
     </ul>
