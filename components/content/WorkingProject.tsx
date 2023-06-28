@@ -43,7 +43,7 @@ const Project = [
 function WorkingProject() {
   return (
     <div className=" lg:min-h-screen lg:p-4 pb-10 relative">
-      <a className="anchor" id="WorkingProject" />
+      <div className="anchor" id="WorkingProject" />
       <InviewTrigger id={"#WorkingProject"} />
       {Project.map(
         ({
