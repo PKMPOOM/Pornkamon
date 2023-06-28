@@ -11,7 +11,7 @@ import InviewTrigger from "../InviewTrigger";
 function Contact() {
   return (
     <div className=" lg:h-[calc(100vh-80px)] h-screen lg:pt-0 pt-32 relative">
-      <a className="anchor" id="Contact" />
+      <div className="anchor" id="Contact" />
       <InviewTrigger id={"#Contact"} />
       <div>
         <p className=" text-3xl font-semibold text-slate-800">

@@ -79,7 +79,7 @@ const ExperiencedData: Experience[] = [
 function PreviousExperiences() {
   return (
     <div className="relative mb-10">
-      <a className="anchor" id="Experiences" />
+      <div className="anchor" id="Experiences" />
       <InviewTrigger id={"#Experiences"} />
       <p className=" text-3xl font-semibold mb-8 text-slate-800 lg:hidden">
         Experiences

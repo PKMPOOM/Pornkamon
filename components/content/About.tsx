@@ -40,7 +40,7 @@ const skillsData: SkillData[] = [
 function About() {
   return (
     <div className="relative text-slate-500  mb-20">
-      <a className="anchor" id="About" />
+      <div className="anchor" id="About" />
       <InviewTrigger id={"#About"} />
       <p className=" mb-4">
         I am a UX/UI Designer with a strong focus on web development. Currently
