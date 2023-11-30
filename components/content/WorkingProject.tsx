@@ -38,13 +38,48 @@ const Project = [
       "Cockroach db",
     ],
   },
+  {
+    projectName: "Meenites",
+    type: "Side project",
+    status: "In progress",
+    timeRanges: "Aug 2023 - Present",
+    // siteLink: "https://mroc.netlify.app/",
+    projectSummary: "Personal classroom management for teachers and students",
+    summary:
+      "This application are for freelance teacher to manage their classroom timetable and create online meeting links for their students. This application also have a feature for students to view their classroom timetable and join the online meeting.",
+    frontendStack: [
+      "Next.js",
+      "React Query",
+      "Ant Design (antd)",
+      "Axios",
+      "Dayjs",
+      "Lodash",
+      "Zustand",
+      "Tailwind CSS",
+      "TypeScript",
+      "Zod",
+      "Nextauth.js",
+    ],
+    backendStack: [
+      "Prisma",
+      "bcrypt",
+      "Next.js api route",
+      "JWT",
+      "Supabase",
+      "Googleapis",
+      "Line messaging API",
+    ],
+  },
 ];
 
 function WorkingProject() {
   return (
-    <div className=" lg:min-h-screen lg:p-4 pb-10 relative">
+    <div className=" lg:min-h-screen lg:p-4 pb-10 relative flex flex-col  gap-8 box-border">
       <div className="anchor" id="WorkingProject" />
       <InviewTrigger id={"#WorkingProject"} />
+      <p className=" text-3xl font-semibold mb-8 text-slate-800 lg:hidden">
+        Project
+      </p>
       {Project.map(
         ({
           backendStack,
@@ -58,29 +93,33 @@ function WorkingProject() {
           siteLink,
         }) => (
           <div key={projectName} className=" flex flex-col gap-1 ">
-            <p className=" text-3xl font-semibold mb-8 text-slate-800 lg:hidden">
-              Project
-            </p>
-            <div className=" flex lg:flex-row flex-col items-start gap-3 lg:items-center">
-              <a href={siteLink} target="_blank">
-                <p className=" text-xl font-semibold text-slate-500 hover:text-blue-500 transition-all duration-150 no-underline hover:underline underline-offset-4 decoration-2">
-                  {projectName} &#8599;
+            <div className=" flex lg:flex-row flex-col items-start gap-3 lg:items-center ">
+              {siteLink ? (
+                <a href={siteLink} target="_blank">
+                  <p className=" text-xl font-semibold text-slate-600 hover:text-blue-500 transition-all duration-150 no-underline hover:underline underline-offset-4 decoration-2">
+                    {projectName} &#8599;
+                  </p>
+                </a>
+              ) : (
+                <p className=" text-xl font-semibold text-slate-600 transition-all duration-150 no-underline  underline-offset-4 decoration-2">
+                  {projectName}
                 </p>
-              </a>
+              )}
+
               <div className=" flex gap-3 items-center mb-4 lg:mb-0">
-                <p className=" text-sm text-slate-500">{type}</p>
-                <p className=" text-sm text-slate-500">{timeRanges}</p>
-                <div className=" text-xs text-orange-400 px-2 border border-orange-400 py-1 rounded-md bg-orange-50 cursor-pointer hover:bg-orange-100 transition-all duration-150 inline-block">
+                <p className=" text-sm text-slate-600">{type}</p>
+                <p className=" text-sm text-slate-600">{timeRanges}</p>
+                <div className=" text-xs text-orange-400 px-2 border border-orange-400 py-1 rounded-md bg-orange-50  hover:bg-orange-100 transition-all duration-150 inline-block">
                   {status}
                 </div>
               </div>
             </div>
-            <p className=" text-sm font-semibold text-slate-500">
+            <p className=" text-sm font-semibold text-slate-600">
               {projectSummary}
             </p>
-            <p className=" text-sm text-slate-500">{summary}</p>
+            <p className=" text-sm text-slate-600">{summary}</p>
             <div className=" mt-4 flex flex-col gap-2">
-              <div className=" text-sm text-slate-500 font-semibold">
+              <div className=" text-sm text-slate-600 font-semibold">
                 Front end
               </div>
               <div className=" flex flex-wrap gap-2">
@@ -90,7 +129,7 @@ function WorkingProject() {
               </div>
             </div>
             <div className=" mt-4 flex flex-col gap-2">
-              <div className=" text-sm text-slate-500 font-semibold">
+              <div className=" text-sm text-slate-600 font-semibold">
                 Back end
               </div>
               <div className=" flex flex-wrap gap-2">

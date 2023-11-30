@@ -11,7 +11,14 @@ type SkillData = {
 const skillsData: SkillData[] = [
   {
     category: "Development",
-    skills: ["WordPress", "HTML", "CSS", "JavaScript"],
+    skills: [
+      "WordPress",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Relational database",
+    ],
   },
   {
     category: "Design",
@@ -39,9 +46,10 @@ const skillsData: SkillData[] = [
 
 function About() {
   return (
-    <div className="relative text-slate-500  mb-20">
+    <div className="relative text-slate-600  mb-20">
       <div className="anchor" id="About" />
       <InviewTrigger id={"#About"} />
+
       <p className=" mb-4">
         I am a UX/UI Designer with a strong focus on web development. Currently
         working as a

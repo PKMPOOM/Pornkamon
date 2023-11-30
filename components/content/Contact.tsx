@@ -20,7 +20,7 @@ function Contact() {
         <p>Feels free to message me in any channel</p>
       </div>
       <div className=" flex lg:flex-col mt-5 gap-4">
-        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-500 cursor-pointer transition-all duration-200">
+        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-600 cursor-pointer transition-all duration-200">
           <a
             className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
             href="https://www.linkedin.com/in/pornkamon-kotemul-6b101a85/"
@@ -34,7 +34,7 @@ function Contact() {
             </p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-500 cursor-pointer transition-all duration-200">
+        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-600 cursor-pointer transition-all duration-200">
           <a
             className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
             href="mailto:poom.pornkamon@gmail.com"
@@ -45,7 +45,7 @@ function Contact() {
             <p className=" hidden lg:block">poom.pornkamon@gmail.com</p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-500 cursor-pointer transition-all duration-200">
+        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-600 cursor-pointer transition-all duration-200">
           <a
             className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
             href="mailto:poom.pornkamon@gmail.com"
@@ -56,7 +56,7 @@ function Contact() {
             <p className=" hidden lg:block">https://github.com/PKMPOOM</p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-500 cursor-pointer transition-all duration-200">
+        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-600 cursor-pointer transition-all duration-200">
           <a
             className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
             href="mailto:poom.pornkamon@gmail.com"

@@ -62,7 +62,7 @@ function Nav() {
 
               <p
                 className={`transition-all duration-100 font-semibold  
-                    ${active ? "text-slate-800" : "text-slate-500"}
+                    ${active ? "text-slate-800" : "text-slate-600"}
                       group-hover:text-slate-800`}
               >
                 {items.title}

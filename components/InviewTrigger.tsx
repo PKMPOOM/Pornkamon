@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { InView } from "react-intersection-observer";
 import { useStore } from "@/Store/useStore";
