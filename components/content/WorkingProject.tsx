@@ -9,7 +9,7 @@ const Project = [
     type: "Side project",
     status: "In progress",
     timeRanges: "Mar 2023 - Present",
-    siteLink: "https://mroc.netlify.app/",
+    siteLink: "https://mroc-admin.netlify.app/",
     projectSummary:
       "A software that have strong qualitative & quantitative research features",
     summary:
