@@ -2,51 +2,11 @@ import React from "react";
 import "./Content.css";
 import InviewTrigger from "../InviewTrigger";
 import Chips from "../ui/Chips";
-
-type SkillData = {
-  category: string;
-  skills: string[];
-};
-
-const skillsData: SkillData[] = [
-  {
-    category: "Development",
-    skills: [
-      "WordPress",
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Relational database",
-    ],
-  },
-  {
-    category: "Design",
-    skills: [
-      "Photoshop",
-      "Illustrator",
-      "Lightroom",
-      "Adobe XD",
-      "Figma",
-      "InDesign",
-    ],
-  },
-  {
-    category: "UXUI",
-    skills: [
-      "Wireframing",
-      "Prototyping",
-      "User Experience Design",
-      "Problem Solving",
-      "Design Thinking",
-      "Presentation",
-    ],
-  },
-];
+import { skillsData } from "@/Constant/skillData";
 
 function About() {
   return (
-    <div className="relative text-slate-600  mb-20">
+    <div className="relative mb-20  text-slate-600">
       <div className="anchor" id="About" />
       <InviewTrigger id={"#About"} />
 
@@ -74,8 +34,8 @@ function About() {
       <div className="flex flex-col gap-4">
         {skillsData.map((items) => (
           <div key={items.category}>
-            <div className=" text-sm font-semibold w-32">{items.category}</div>
-            <div className=" flex flex-wrap gap-2 my-1 ">
+            <div className=" w-32 text-sm font-semibold">{items.category}</div>
+            <div className=" my-1 flex flex-wrap gap-2 ">
               {items.skills.map((items, index) => (
                 <Chips key={index} label={items} />
               ))}

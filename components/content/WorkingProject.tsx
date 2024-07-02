@@ -74,10 +74,10 @@ const Project = [
 
 function WorkingProject() {
   return (
-    <div className=" lg:min-h-screen lg:p-4 pb-10 relative flex flex-col  gap-8 box-border">
+    <div className=" relative box-border flex flex-col gap-8 pb-10  lg:min-h-screen lg:p-4">
       <div className="anchor" id="WorkingProject" />
       <InviewTrigger id={"#WorkingProject"} />
-      <p className=" text-3xl font-semibold mb-8 text-slate-800 lg:hidden">
+      <p className=" mb-8 text-3xl font-semibold text-slate-800 lg:hidden">
         Project
       </p>
       {Project.map(
@@ -93,23 +93,23 @@ function WorkingProject() {
           siteLink,
         }) => (
           <div key={projectName} className=" flex flex-col gap-1 ">
-            <div className=" flex lg:flex-row flex-col items-start gap-3 lg:items-center ">
+            <div className=" flex flex-col items-start gap-3 lg:flex-row lg:items-center ">
               {siteLink ? (
                 <a href={siteLink} target="_blank">
-                  <p className=" text-xl font-semibold text-slate-600 hover:text-blue-500 transition-all duration-150 no-underline hover:underline underline-offset-4 decoration-2">
+                  <p className=" text-xl font-semibold text-slate-600 no-underline decoration-2 underline-offset-4 transition-all duration-150 hover:text-blue-500 hover:underline">
                     {projectName} &#8599;
                   </p>
                 </a>
               ) : (
-                <p className=" text-xl font-semibold text-slate-600 transition-all duration-150 no-underline  underline-offset-4 decoration-2">
+                <p className=" text-xl font-semibold text-slate-600 no-underline decoration-2 underline-offset-4  transition-all duration-150">
                   {projectName}
                 </p>
               )}
 
-              <div className=" flex gap-3 items-center mb-4 lg:mb-0">
+              <div className=" mb-4 flex items-center gap-3 lg:mb-0">
                 <p className=" text-sm text-slate-600">{type}</p>
                 <p className=" text-sm text-slate-600">{timeRanges}</p>
-                <div className=" text-xs text-orange-400 px-2 border border-orange-400 py-1 rounded-md bg-orange-50  hover:bg-orange-100 transition-all duration-150 inline-block">
+                <div className=" inline-block rounded-md border border-orange-400 bg-orange-50 px-2 py-1 text-xs  text-orange-400 transition-all duration-150 hover:bg-orange-100">
                   {status}
                 </div>
               </div>
@@ -119,7 +119,7 @@ function WorkingProject() {
             </p>
             <p className=" text-sm text-slate-600">{summary}</p>
             <div className=" mt-4 flex flex-col gap-2">
-              <div className=" text-sm text-slate-600 font-semibold">
+              <div className=" text-sm font-semibold text-slate-600">
                 Front end
               </div>
               <div className=" flex flex-wrap gap-2">
@@ -129,7 +129,7 @@ function WorkingProject() {
               </div>
             </div>
             <div className=" mt-4 flex flex-col gap-2">
-              <div className=" text-sm text-slate-600 font-semibold">
+              <div className=" text-sm font-semibold text-slate-600">
                 Back end
               </div>
               <div className=" flex flex-wrap gap-2">
@@ -139,7 +139,7 @@ function WorkingProject() {
               </div>
             </div>
           </div>
-        )
+        ),
       )}
     </div>
   );

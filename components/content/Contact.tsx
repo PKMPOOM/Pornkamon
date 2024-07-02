@@ -10,7 +10,7 @@ import InviewTrigger from "../InviewTrigger";
 
 function Contact() {
   return (
-    <div className=" lg:h-[calc(100vh-80px)] h-screen lg:pt-0 pt-32 relative">
+    <div className=" relative h-screen pt-32 lg:h-[calc(100vh-80px)] lg:pt-0">
       <div className="anchor" id="Contact" />
       <InviewTrigger id={"#Contact"} />
       <div>
@@ -19,10 +19,10 @@ function Contact() {
         </p>
         <p>Feels free to message me in any channel</p>
       </div>
-      <div className=" flex lg:flex-col mt-5 gap-4">
-        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-600 cursor-pointer transition-all duration-200">
+      <div className=" mt-5 flex gap-4 lg:flex-col">
+        <div className=" cursor-pointer text-slate-800 transition-all duration-200 hover:text-blue-500 lg:text-slate-600">
           <a
-            className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
+            className=" flex flex-col items-start gap-3 lg:flex-row lg:items-center "
             href="https://www.linkedin.com/in/pornkamon-kotemul-6b101a85/"
             target="_blank"
           >
@@ -34,9 +34,9 @@ function Contact() {
             </p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-600 cursor-pointer transition-all duration-200">
+        <div className=" cursor-pointer text-slate-800 transition-all duration-200 hover:text-blue-500 lg:text-slate-600">
           <a
-            className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
+            className=" flex flex-col items-start gap-3 lg:flex-row lg:items-center "
             href="mailto:poom.pornkamon@gmail.com"
           >
             <div>
@@ -45,9 +45,9 @@ function Contact() {
             <p className=" hidden lg:block">poom.pornkamon@gmail.com</p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-600 cursor-pointer transition-all duration-200">
+        <div className=" cursor-pointer text-slate-800 transition-all duration-200 hover:text-blue-500 lg:text-slate-600">
           <a
-            className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
+            className=" flex flex-col items-start gap-3 lg:flex-row lg:items-center "
             href="mailto:poom.pornkamon@gmail.com"
           >
             <div>
@@ -56,9 +56,9 @@ function Contact() {
             <p className=" hidden lg:block">https://github.com/PKMPOOM</p>
           </a>
         </div>
-        <div className=" hover:text-blue-500 text-slate-800 lg:text-slate-600 cursor-pointer transition-all duration-200">
+        <div className=" cursor-pointer text-slate-800 transition-all duration-200 hover:text-blue-500 lg:text-slate-600">
           <a
-            className=" gap-3 items-start lg:items-center flex flex-col lg:flex-row "
+            className=" flex flex-col items-start gap-3 lg:flex-row lg:items-center "
             href="mailto:poom.pornkamon@gmail.com"
           >
             <div>

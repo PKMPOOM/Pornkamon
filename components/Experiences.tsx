@@ -6,7 +6,7 @@ import WorkingProject from "./content/WorkingProject";
 
 function Experiences() {
   return (
-    <div className="flex flex-col w-full lg:w-3/5 text-md">
+    <div className="text-md flex w-full flex-col lg:w-3/5">
       <About />
       <PreviousExperiences />
       <WorkingProject />

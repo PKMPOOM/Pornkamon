@@ -1,5 +1,3 @@
-import InviewTrigger from "../InviewTrigger";
-import "./Content.css";
 interface Experience {
   title: string;
   company: string;
@@ -9,7 +7,7 @@ interface Experience {
   responsibilities: string[];
 }
 
-const ExperiencedData: Experience[] = [
+export const ExperiencedData: Experience[] = [
   {
     title: "UXUI Designer",
     company: "Insightrix Communities",
@@ -73,50 +71,3 @@ const ExperiencedData: Experience[] = [
     ],
   },
 ];
-
-function PreviousExperiences() {
-  return (
-    <div className="relative mb-10">
-      <div className="anchor" id="Experiences" />
-      <InviewTrigger id={"#Experiences"} />
-      <p className=" mb-8 text-3xl font-semibold text-slate-800 lg:hidden">
-        Experiences
-      </p>
-      {ExperiencedData.map((items, index) => (
-        <div
-          key={items.title}
-          className="group mb-10 flex flex-col gap-2 rounded-lg border border-hidden transition-all duration-300 lg:flex-row lg:gap-4 lg:p-4  lg:hover:border-slate-200 lg:hover:bg-white/50 lg:hover:shadow-md lg:hover:backdrop-blur-lg"
-        >
-          <div className=" flex items-center gap-4 text-sm font-normal text-slate-600 transition-all duration-300 lg:w-3/12 lg:items-start lg:group-hover:text-slate-800">
-            <p className=" ">{items.timeRanges}</p>
-            <div className=" h-[1px] w-7 flex-1 bg-slate-300 lg:hidden"></div>
-          </div>
-          <div className=" lg:w-9/12 ">
-            <div className=" flex flex-col items-start text-xl font-semibold text-slate-600 transition-all duration-300 lg:flex-row lg:items-center lg:group-hover:text-slate-800">
-              {items.title}
-              <span className="text-sm font-normal lg:pl-2">
-                {items.company} - {items.jobType}
-              </span>
-            </div>
-            <div className=" mt-4 text-sm text-slate-600 transition-all duration-300 lg:group-hover:text-slate-800">
-              {items.summary}
-            </div>
-
-            <ul className=" mt-4">
-              {items.responsibilities.map((skill, index) => (
-                <li
-                  key={index}
-                  className=" mb-1 text-xs text-slate-600 transition-all duration-300 lg:text-sm lg:group-hover:text-slate-800"
-                >
-                  - {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default PreviousExperiences;
